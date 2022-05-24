@@ -1,0 +1,18 @@
+.nav__menu {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav__image {
+  box-sizing: border-box;
+  border: 1px solid #0882ff;
+  width: 10%;
+}
+
+.nav__links {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  min-width: 50%;
+}
