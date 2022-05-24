@@ -1,11 +1,12 @@
 .about {
-  margin: 100px auto;
+  margin: 0 auto;
   max-width: 100%;
   display: grid;
   grid-template-areas:
     "img title"
     "img paragraph";
   grid-template-columns: 480px auto;
+  background-color: gray;
 }
 .about__img {
   grid-area: img;
@@ -15,6 +16,7 @@
 .about__title {
   max-width: 475px;
   grid-area: title;
+  align-self: end;
 }
 .about__paragraph {
   max-width: 475px;
