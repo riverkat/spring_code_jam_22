@@ -1,0 +1,22 @@
+.about {
+  margin: 100px auto;
+  max-width: 100%;
+  display: grid;
+  grid-template-areas:
+    "img title"
+    "img paragraph";
+  grid-template-columns: 480px auto;
+}
+.about__img {
+  grid-area: img;
+  max-width: 477px;
+  text-align: right;
+}
+.about__title {
+  max-width: 475px;
+  grid-area: title;
+}
+.about__paragraph {
+  max-width: 475px;
+  grid-area: paragraph;
+}
