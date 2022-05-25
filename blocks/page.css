@@ -1,0 +1,7 @@
+.page {
+  margin: 0 auto;
+  max-width: 1280px;
+}
+.page__content {
+  max-width: 1280px;
+}
