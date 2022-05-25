@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <link href="./pages/index.css" rel="stylesheet" />
+    <link href="pages/index.css" rel="stylesheet" />
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -23,8 +23,7 @@
         <h3 class="header__subtitle">It's nice to meet you!</h3>
         <div class="header__image">placeholder</div>
         <p class="header__description">
-          basic info
-          <!--things like his age, occupation, hometown?-->
+          basic info things like his age, occupation, hometown?
         </p>
       </header>
       <main>
@@ -35,14 +34,104 @@
           <!--images to show coding languages and related skillsets like github, photoshop, figma? idk where to get those-->
         </section>
         <section class="message" id="message">
-          <!--I thought this is where the form that Daniel mocked up could go-->
-        </section>
-        <section class="contact" id="contact">
-          <!--additional contact information, like social media?-->
+          <div class="message__image-wrapper">
+            <h2 class="message__title">Give me a shout!</h2>
+            <img
+              class="message__image"
+              src="./images/terry_chill_message.png"
+              alt="picture of Terry"
+            />
+          </div>
+          <div class="message__form-container">
+            <form class="form message__form">
+              <h2 class="form__title">Message me</h2>
+              <fieldset class="form__fieldset">
+                <label for="full-name" class="form__label">Name</label>
+                <input
+                  class="form__input"
+                  id="full-name"
+                  type="text"
+                  placeholder="Name"
+                  minlength="2"
+                  maxlength="40"
+                  required
+                />
+                <label for="title" class="form__label">Title</label>
+                <input
+                  class="form__input"
+                  id="title"
+                  type="text"
+                  placeholder="Job title, company"
+                  required
+                />
+                <label for="contact" class="form__label"
+                  >Contact information</label
+                >
+                <input
+                  class="form__input"
+                  id="contact"
+                  placeholder="Email"
+                  type="email"
+                  required
+                />
+                <label for="message" class="form__label">Message</label>
+                <textarea
+                  class="form__input input__text"
+                  id="message"
+                  type="text"
+                  rows="10"
+                  cols="25"
+                  placeholder="Message, additional contact information, etc..."
+                  required
+                ></textarea>
+              </fieldset>
+              <fieldset class="form__fieldset">
+                <button class="form__button">Submit</button>
+              </fieldset>
+            </form>
+          </div>
         </section>
       </main>
       <footer class="footer">
-        <!--I think we could reuse similar code to previous project footers here, and add our names-->
+        <div class="footer__image-wrapper">
+          <ul class="footer__image-list">
+            <li class="footer__list-item">
+              <img
+                class="footer__list-image"
+                src="./images/facebook_logo_icon.svg"
+                alt="facebook logo"
+              />
+            </li>
+            <li class="footer__list-item">
+              <img
+                class="footer__list-image"
+                src="./images/instagram_logo_icon.svg"
+                alt="instagram logo"
+              />
+            </li>
+            <li class="footer__list-item">
+              <img
+                class="footer__list-image"
+                src="./images/twitter_logo_icon.svg"
+                alt="twitter logo"
+              />
+            </li>
+            <li class="footer__list-item">
+              <img
+                class="footer__list-image"
+                src="./images/linkedin_logo_icon.svg"
+                alt="linkedin logo"
+              />
+            </li>
+            <li class="footer__list-item">
+              <img
+                class="footer__list-image"
+                src="./images/github_logo_icon.svg"
+              />
+            </li>
+          </ul>
+        </div>
+        <p class="footer__paragraph">©️2022 Team WiMaRi</p>
       </footer>
     </div>
   </body>
