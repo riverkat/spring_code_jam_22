@@ -5,11 +5,14 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="landing page for Terry Tegegne" />
+    <meta name="keywords" content="landing page about me resume" />
+    <meta name="authors" content="Team Wimari" />
     <title>Terry Tegegne</title>
   </head>
   <body class="page">
-    <div class="page__content">
-      <header class="header">
+    <!--<div class="page__content">
+      <<header class="header">
         <nav class="nav__menu">
           <img class="nav__image" />
           <ul class="nav__links">
@@ -101,7 +104,7 @@
         </section>
         <section class="message" id="message">
           <div class="message__image-wrapper">
-            <h2 class="message__title">Give me a shout!</h2>
+            <h2 class="message__title">Give me a&nbsp;shout!</h2>
             <img
               class="message__image"
               src="./images/terry_message_me.png"
@@ -145,8 +148,6 @@
                   class="form__input input__text"
                   id="message"
                   type="text"
-                  rows="10"
-                  cols="25"
                   placeholder="Message, additional contact information, etc..."
                   required
                 ></textarea>
@@ -158,7 +159,7 @@
           </div>
         </section>
       </main>
-      <footer class="footer">
+      <footer id="contact" class="footer">
         <div class="footer__image-wrapper">
           <ul class="footer__image-list">
             <li class="footer__list-item">
@@ -166,6 +167,7 @@
                 class="footer__list-image"
                 src="./images/facebook_logo_icon.svg"
                 alt="facebook logo"
+                onclick="window.location.href='https://facebook.com';"
               />
             </li>
             <li class="footer__list-item">
@@ -173,6 +175,7 @@
                 class="footer__list-image"
                 src="./images/instagram_logo_icon.svg"
                 alt="instagram logo"
+                onclick="window.location.href='https://instagram.com';"
               />
             </li>
             <li class="footer__list-item">
@@ -180,6 +183,7 @@
                 class="footer__list-image"
                 src="./images/twitter_logo_icon.svg"
                 alt="twitter logo"
+                onclick="window.location.href='https://twitter.com';"
               />
             </li>
             <li class="footer__list-item">
@@ -187,12 +191,15 @@
                 class="footer__list-image"
                 src="./images/linkedin_logo_icon.svg"
                 alt="linkedin logo"
+                onclick="window.location.href='https://linkedin.com';"
               />
             </li>
             <li class="footer__list-item">
               <img
                 class="footer__list-image"
                 src="./images/github_logo_icon.svg"
+                alt="github logo"
+                onclick="window.location.href='https://github.com';"
               />
             </li>
           </ul>
@@ -200,5 +207,18 @@
         <p class="footer__paragraph">©️2022 Team WiMaRi</p>
       </footer>
     </div>
+    <div class="popup">
+      <div class="popup__container">
+        <button
+              class="popup__close-button"
+              type="button">
+        </button>
+        <img class="popup__image" src="./images/flying_robot.png" alt="flying robot" />
+        <p class="popup__message">Thank you! I will get back to you ASAP!</p>
+      </div>
+    </div>
+
+
+    <script src="./scripts/index.js"></script>
   </body>
 </html>

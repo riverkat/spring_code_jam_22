@@ -2,7 +2,6 @@
   box-sizing: border-box;
   text-align: center;
   margin: 0 auto;
-  padding-bottom: 25px;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.14;
@@ -37,12 +36,16 @@
 .footer__paragraph {
   margin: 0;
   font-size: 18px;
-  padding-top: 30px;
+  padding-bottom: 20px;
 }
 
 @media screen and (max-width: 500px) {
   .footer {
     font-size: 12px;
+  }
+
+  .footer__image-wrapper {
+    padding: 25px 0px;
   }
 
   .footer__list-image {
